@@ -125,13 +125,14 @@ h2::after {
   height: 600px;
   object-fit: cover;
   width: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.8),
-    rgba(0, 0, 255, 0.8)
-  );
-  background-size: cover;
-  background-position: center;
+}
+.slides li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 600px;
+  width: 1600px;
+  background: hsla(0, 0, 0, 0.5);
 }
 .slider-headers {
   position: absolute;
@@ -154,10 +155,11 @@ h2::after {
 }
 
 .new-collection {
-  width: 1700px;
+  width: 1110px;
   height: 676px;
   background-color: #e9f0fd;
   padding-top: 100px;
+  margin: 0, auto;
 }
 
 .collection-item {
@@ -166,6 +168,7 @@ h2::after {
   float: left;
   margin: 0px 30px 0px 0px;
   cursor: pointer;
+  position: relative;
 }
 .collection-item:nth-child(4n) {
   margin-right: 0px;
@@ -194,11 +197,12 @@ ul .new-collection-list {
   padding: 0;
   list-style: none;
   position: absolute;
+  bottom: 0px;
 }
 /*product name*/
 .n-item {
   width: 186px;
-  height: 26px;
+  height: 40px;
   text-decoration: none;
   margin: 0;
   float: left;
@@ -209,7 +213,7 @@ ul .new-collection-list {
   background-color: rgba(230, 230, 235, 0.5);
   text-decoration: none;
   width: 55px;
-  height: 26px;
+  height: 40px;
   float: right;
   margin: 0;
   text-align: center;
