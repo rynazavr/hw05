@@ -93,8 +93,16 @@ h2::after {
   margin: auto;
   width: 1600px;
   height: 600px;
-  background-color: rgb(191, 202, 164);
+  /*background-color: rgb(191, 202, 164);*/
   position: relative;
+}
+/*image slider*/
+.slider-overlay {
+  background-color: rgba(0, 0, 2, 0.5);
+  margin: auto;
+  width: 1600px;
+  height: 600px;
+  position: absolute;
 }
 /*slider buttons*/
 .slider-button {
@@ -109,6 +117,7 @@ h2::after {
   color: #ffffff;
   font-size: 80px;
   cursor: pointer;
+  z-index: 1;
 }
 .left-slider-button {
   left: 245px;
@@ -126,14 +135,7 @@ h2::after {
   object-fit: cover;
   width: 100%;
 }
-.slides li::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 600px;
-  width: 1600px;
-  background: hsla(0, 0, 0, 0.5);
-}
+
 .slider-headers {
   position: absolute;
   top: 50%;
@@ -153,13 +155,20 @@ h2::after {
 .slider-header2 {
   font-size: 24px;
 }
-
+/*COLLECTION CONTAINER*/
+.collection {
+  width: 1600px;
+  height: 676px;
+  margin: 0, auto;
+  position: relative;
+  background-color: #e9f0fd;
+}
 .new-collection {
   width: 1110px;
-  height: 676px;
-  background-color: #e9f0fd;
-  padding-top: 100px;
-  margin: 0, auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .collection-item {
@@ -181,7 +190,7 @@ ul .new-collection-list {
 .collection-item {
   list-style: none;
 }
-/*collection product mame&prices*/
+/*collection item name&prices*/
 .items-specifications {
   background-color: #323232;
   text-decoration: none;
@@ -238,6 +247,7 @@ ul .new-collection-list {
 .card:hover .overlay {
   opacity: 0.549;
 }
+
 .navigation-on-card {
   position: absolute;
   left: 50%;
@@ -247,16 +257,18 @@ ul .new-collection-list {
 .navigation-on-card ul {
   margin-bottom: 7px;
 }
+
 .icon {
   display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   border-width: 1px;
   border-color: rgb(255, 255, 255);
   border-style: solid;
   width: 47px;
   height: 47px;
   cursor: pointer;
+  font-size: 30px;
 }
 .icon:not(:last-child) {
   margin-right: 7px;
@@ -273,8 +285,11 @@ ul .new-collection-list {
   width: 164px;
   height: 48px;
   cursor: pointer;
+  font-size: 30px;
 }
-
+.icon-card {
+  padding: 8px;
+}
 .add-to-card-text {
   font-size: 14px;
   color: rgb(255, 255, 255);
@@ -284,21 +299,7 @@ ul .new-collection-list {
   float: right;
   padding: 10px 17px 10px 0px;
 }
-.icon-add-to-card {
-  float: left;
-  width: 30px;
-  height: 30px;
-  padding: 11px 20px 11px 12px;
-}
-.icon-heart {
-  background-image: url();
-}
-.icon-arrows {
-  background-image: url();
-}
-.icon-clock {
-  background-image: url();
-}
+
 /*FOOTER*/
 .footer {
   height: 88px;
