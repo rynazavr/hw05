@@ -106,8 +106,7 @@ h2::after {
 }
 /*slider buttons*/
 .slider-button {
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
+  background-color: rgba(78, 198, 171, 0.651);
   border: none;
   width: 104px;
   height: 104px;
@@ -239,13 +238,14 @@ ul .new-collection-list {
 .overlay {
   width: 235px;
   height: 261px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   opacity: 0;
   margin: 10px;
   position: absolute;
 }
 .card:hover .overlay {
-  opacity: 0.549;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navigation-on-card {
