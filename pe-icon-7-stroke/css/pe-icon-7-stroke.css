@@ -582,6 +582,7 @@
 }
 .pe-7s-cart:before {
   content: "\e66e";
+  font-size: 30px;
 }
 .pe-7s-camera:before {
   content: "\e66f";
