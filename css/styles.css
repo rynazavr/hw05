@@ -98,11 +98,12 @@ h2::after {
   position: relative;
 }
 /*image slider*/
-.slider-overlay {
+.slides::before {
+  content: "";
   background-color: rgba(0, 0, 2, 0.5);
   margin: auto;
-  width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   position: absolute;
 }
 /*slider buttons*/
@@ -241,6 +242,10 @@ ul .new-collection-list {
 .collection-item:hover .items-specifications {
   background-color: #1abc9c;
 }
+.collection-item:hover .overlay {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .card {
   position: relative;
 }
@@ -251,10 +256,6 @@ ul .new-collection-list {
   opacity: 0;
   margin: 10px;
   position: absolute;
-}
-.card:hover .overlay {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 .navigation-on-card {
   position: absolute;
