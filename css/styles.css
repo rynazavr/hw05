@@ -83,7 +83,8 @@ h2::after {
   line-height: 23px;
   letter-spacing: -0.02;
 }
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
   color: #1abc9c;
 }
 .menu li:not(:last-child) {
@@ -118,7 +119,8 @@ h2::after {
   cursor: pointer;
   z-index: 1;
 }
-.slider-button:hover {
+.slider-button:hover,
+.slider-button:focus {
   background-color: rgba(78, 198, 171, 1);
 }
 .left-slider-button {
@@ -210,7 +212,7 @@ ul .new-collection-list {
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  position: absolute;
+  position: relative;
   bottom: 0px;
 }
 /*product name*/
@@ -218,6 +220,7 @@ ul .new-collection-list {
   width: 186px;
   height: 40px;
   text-decoration: none;
+  color: #ffffff;
   margin: 0;
   float: left;
   padding: 5px 0px 9px 14px;
@@ -283,7 +286,8 @@ ul .new-collection-list {
 .icon:not(:last-child) {
   margin-right: 7px;
 }
-.icon:hover {
+.icon:hover,
+.icon:focus {
   background-color: #1abc9c;
   border-color: #1abc9c;
 }
