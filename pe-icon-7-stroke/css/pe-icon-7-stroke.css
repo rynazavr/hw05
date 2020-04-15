@@ -584,6 +584,7 @@
   content: "\e66e";
   font-size: 30px;
   padding-right: 10px;
+  vertical-align: -22%;
 }
 .pe-7s-camera:before {
   content: "\e66f";
