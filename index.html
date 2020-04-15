@@ -48,12 +48,14 @@
         </nav>
       </div>
       <div class="slider">
-        <button
-          class="slider-button left-slider-button pe-7s-angle-left"
-        ></button>
-        <button
-          class="slider-button right-slider-button pe-7s-angle-right"
-        ></button>
+        <div class="slider-buttonss clearfix">
+          <button
+            class="slider-button left-slider-button pe-7s-angle-left"
+          ></button>
+          <button class="slider-button right-slider-button pe-7s-angle-right">
+            <span class="visually-hidden">next button</span>
+          </button>
+        </div>
         <ul class="slides">
           <li>
             <img class="slider-image" src="img/slide.jpg" alt="image1" />
@@ -68,7 +70,7 @@
       </div>
     </header>
     <main>
-      <section class="collection container">
+      <section class="collection">
         <div class="new-collection">
           <h2>new collection</h2>
           <ul class="new-collection-list">
