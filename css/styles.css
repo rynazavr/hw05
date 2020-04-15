@@ -159,9 +159,11 @@ h2::after {
   font-size: 60px;
   margin-top: 0px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 .slider-header2 {
   font-size: 24px;
+  font-weight: 300;
 }
 /*COLLECTION CONTAINER*/
 .collection {
@@ -225,6 +227,8 @@ ul .new-collection-list {
   margin: 0;
   float: left;
   padding: 5px 0px 9px 14px;
+  font-weight: 900;
+  font-size: 19px;
 }
 /*product price*/
 .n-price {
@@ -237,6 +241,8 @@ ul .new-collection-list {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 9px;
+  font-weight: 900;
+  font-size: 19px;
 }
 /*collection product hover*/
 .collection-item:hover .items-specifications {
@@ -305,9 +311,6 @@ ul .new-collection-list {
 .add-to-card-button:hover {
   background-color: #1abc9c;
 }
-.icon-card {
-  padding: 8px;
-}
 .add-to-card-text {
   font-size: 14px;
   color: rgb(255, 255, 255);
@@ -315,7 +318,7 @@ ul .new-collection-list {
   line-height: 2.286;
   text-align: center;
   float: right;
-  /*padding: 10px 17px 10px 0px;*/
+  font-weight: 300;
 }
 
 /*FOOTER*/
@@ -328,6 +331,8 @@ ul .new-collection-list {
   letter-spacing: -0.02;
   text-align: center;
   padding: 29px 0px;
+  width: 1600px;
+  margin: 0 auto;
 }
 .color-text {
   color: #1abc9c;
