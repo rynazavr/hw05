@@ -82,7 +82,7 @@ h2::after {
   text-transform: uppercase;
   line-height: 23px;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "OpenSans", sans-serif;
 }
 .menu-link:hover,
@@ -96,7 +96,6 @@ h2::after {
 .slider {
   margin: auto;
   width: 100%;
-  height: 600px;
   position: relative;
 }
 /*image slider*/
@@ -110,8 +109,6 @@ h2::after {
 }
 /*slider buttons*/
 .slider-buttonss {
-  /*border: none;*/
-  min-width: 1110px;
   height: 104px;
   position: absolute;
   top: 50%;
@@ -167,8 +164,7 @@ h2::after {
 }
 .slider-header1 {
   font-size: 60px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 0px 0px 10px 0px;
   font-weight: 700;
 }
 .slider-header2 {
@@ -182,21 +178,13 @@ h2::after {
   margin: 0 auto;
   position: relative;
   background-color: #e9f0fd;
-}
-.new-collection {
-  width: 1110px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  padding-top: 100px;
 }
 
 .collection-item {
   width: 255px;
-  height: 322px;
   float: left;
   margin: 0px 30px 0px 0px;
-  cursor: pointer;
   position: relative;
 }
 .collection-item:nth-child(4n) {
@@ -247,8 +235,7 @@ ul .new-collection-list {
   float: right;
   margin: 0;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 9px;
+  padding: 5px 0px 9px 0px;
   font-weight: 900;
   font-size: 19px;
 }
@@ -332,7 +319,7 @@ ul .new-collection-list {
   font-weight: 300;
 }
 /*FOOTER*/
-.footer {
+.footer-block {
   height: 88px;
   background-color: #323232;
   font-size: 16px;
