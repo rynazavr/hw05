@@ -214,8 +214,6 @@ ul .new-collection-list {
 .items-specifications {
   background-color: #323232;
   text-decoration: none;
-  width: 255px;
-  height: 40px;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 18px;
@@ -266,8 +264,6 @@ ul .new-collection-list {
   position: relative;
 }
 .overlay {
-  /*width: 235px;
-  height: 261px;*/
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
@@ -365,4 +361,9 @@ input[type="radio"].visually-hidden {
   clip-path: insert(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
